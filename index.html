@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>CountDown</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ferdi<span>Demirci</span></h1>
+        <h1>Countdown</h1>
+    </header>
+    <div class="content">
+        <div class="counter"></div>
+        <div class="select" id="select">
+            <select name="time" id="timer">
+                <option value="seconds" onclick="change()">Seconds</option>
+                <option value="hour" onclick="change()">Hour</option>
+            </select>
+            <button class="btn" onclick="change()">Select</button>
+        </div>
+        <input type="number" id="seconds" placeholder="Seconds">
+        <div class="buttons">
+            <button class="btn reset" id="reset" onclick="reset()">Reset</button>
+            <button class="btn start" id="start" value="1" onclick="check(this)">Start</button>
+            <button class="btn start" id="continue" value="1" onclick="check(this)">Continue</button>
+            <button class="btn stop" id="stop" value="0" onclick="check(this)">Stop</button>
+            <button class="btn pause" id="pause" onclick="pause()">Pause</button>
+            <button class="btn start" id="ok" onclick="toSubmit()">Submit</button>
+        </div>
+        <audio id="music">
+            <source src="mola.mp3">
+        </audio>
+
+    </div>
+    <footer>Ferdi DEMİRCİ © 2021</footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
